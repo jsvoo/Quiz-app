@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Veritas-Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">Lumen et Veritas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="login" href="#">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="school_registration">School Registration</a></li>
+                            <li><a class="dropdown-item" href="#" id="student_registration">Student Registration</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="newquiz.html">Take Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="login" href="newquiz.html">Take Quiz</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<div class="head">
+    QUIZ PORTAL
+</div>
+
+
+
+
+    <div class="container d-flex my-container">
+        
+
+        <div class="hall-of-fame ">
+            <h2>Hall of Fame</h2>
+            <h5>Meet our previous winners</h5>
+            <div>
+                <h4>2022 winner</h4>
+                <p>Student Name: ?? <br>
+                    School: ??</p>
+            </div>
+            <div>
+                <h4>2021 winner</h4>
+                <p> <span class="winner"> John Doe</span> <br>
+                    Rework Academy</p>
+            </div>
+            <div>
+                <h4>2020 winner</h4>
+                <p><span class="winner"> John Doe</span> <br>
+                    Rework Academy</p>
+            </div>
+            <div>
+                <h4>2019 winner</h4>
+                <p><span class="winner"> John Doe</span> <br>
+                    Rework Academy</p>
+            </div>
+        </div>
+        <div class="registrations">
+            <div class="heading " id="register_school_section">
+                <form action="" class="school registration">
+                    <h3>School Registration</h3>
+                    <div>
+                        <div>
+                            <label for="School">Name of School</label>
+                        </div>
+                        <input type="text" required name="" class="school-inputs" id="school_name">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="school_address">School Address</label>
+                        </div>
+                        <input type="text" required name="" class="school-inputs" id="school_address">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="school_email">Email Address</label>
+                        </div>
+                        <input type="email" name="" class="school-inputs" id="school_email">
+                        <span></span>
+                    </div>
+
+                    <button id="register_school">Register School</button>
+                </form>
+            </div>
+
+            <div class="heading " id="register_student_section">
+                <form action="" class="Student registration">
+                    <h3>Student Registration</h3>
+                    <div>
+                        <div>
+                            <label for="student"> Full Name</label>
+                        </div>
+                        <input type="text" required name="" class="student-inputs" id="student-name">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="gender"> Gender</label>
+                        </div>
+                        <select name="" id="gender" class="student-inputs">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <span></span>
+
+                    </div>
+                    <div>
+                        <div>
+                            <label for="student-age"> Age</label>
+                        </div>
+                        <input type="number" required name="" class="student-inputs" id="student-age">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="school">School Represented</label>
+                        </div>
+                        <select name="" id="student-school" class="student-inputs">
+                        </select>
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="student-email">Email Address</label>
+                        </div>
+                        <input type="email" name="" id="student-email" class="student-inputs">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password</label>
+                        </div>
+                        <input type="password" name="" id="password" class="student-inputs">
+                        <span></span>
+                    </div>
+                    <button id="register-student">Register Student</button>
+                </form>
+            </div>
+
+            <div class="heading login-section" id="login_section">
+                <h4 style="width: 90%; margin:auto">Registration Deadline: September 25, 2022</h4>
+                <div id="wait_tim">
+                    <div>
+                        <center>
+                            <span id="days"></span>
+                            <span id="hours"></span>
+                            <span id="minutes"></span>
+                            <span id="seconds"></span>
+                        </center>
+                        <center>
+                            <h1 id="schedule_check"></h1>
+            
+                        </center>
+                    </div>
+                </div>
+                <form action="" class="student login registration">
+                    <h3>Login</h3>
+                    <div>
+                        <div>
+                            <label for="email">Email Address</label>
+                            
+                        </div>
+                        <input type="email" name="" class="login-inputs" id="login_email">
+                        <span></span>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password</label>
+                            
+                        </div>
+                        <input type="password" name="" class="login-inputs" id="login_password">
+                        <span></span>
+                    </div>
+                    <button id="student_login">Login</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="./bootstrap.bundle.min.js"></script>
+<script src="./index.js"></script>
+
+</html>

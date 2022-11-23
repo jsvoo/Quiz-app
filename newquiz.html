@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Veritas-Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">Lumen et Veritas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="login" href="#">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="school_registration">School Registration</a></li>
+                            <li><a class="dropdown-item" href="#" id="student_registration">Student Registration</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="newquiz.html">Take Quiz</a></li>
+                        </ul>
+
+                        
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="head">
+        QUIZ PORTAL
+    </div>
+
+
+    <div id="timer" style="display: none;">
+        <div>
+            <h1> <span id="mins">1</span> : <span id="secs">00</span></h1>
+            <h3 id="time_up_message"></h3>
+        </div>
+    </div>
+
+    <div id="wait_time">
+        <div>
+            <center>
+                <span id="days"></span>
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+            </center>
+            <center>
+                <h1 id="schedule_check"></h1>
+
+            </center>
+            <div class="foot">Copyright &#169 Lumen et Veritas 2022</div>
+        </div>
+    </div>
+
+    <div class="quiz-body" id="quiz_body">
+
+        <div class="quiz-container">
+            <div id="quiz"></div>
+        </div>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+        <button id="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
+
+
+
+
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+    <div style="text-align: center; display: flex; justify-content: center; width: 80%; display: none;" id="view_result">
+        <button type="button" class="btn btn-primary"  data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" >
+            View Result </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-head" id="staticBackdropLabel"></h5>
+                </div>
+                <div class="modal-body">
+                    <div id="results"></div>
+                    <div>
+                        <h4><span>Number of correct answers: </span><span id="numCorrectAns"></span></h4>
+                        <h4><span>Percentage score: </span><span id="percentScore"></span></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary logout" data-bs-dismiss="modal">Close/Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="./newquiz.js"></script>
+<script src="./bootstrap.bundle.min.js"></script>
+
+</html>

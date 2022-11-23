@@ -1,0 +1,48 @@
+{
+  "students": [
+    {
+      "student_name": "Onoja Victor",
+      "student_gender": "male",
+      "student_age": "26",
+      "student_school": "Rework Academy",
+      "student_email": "onoja.jsdev@gmail.com",
+      "student_password": "none",
+      "id": 1
+    },
+    {
+      "student_name": "John Mack",
+      "student_gender": "male",
+      "student_age": "24",
+      "student_school": "Cambridge Nigeria",
+      "student_email": "john@mack.com",
+      "student_password": "1234",
+      "id": 2
+    }
+  ],
+  "schools": [
+    {
+      "school_name": "Select your school",
+      "school_address": "placeholder school",
+      "school_email": "placeholder school",
+      "id": 0
+    },
+    {
+      "school_name": "Rework Academy",
+      "school_address": "Number 11, Aknaton Estate, Area 1, Abuja",
+      "school_email": "contact@reworkacademy.com",
+      "id": 1
+    },
+    {
+      "school_name": "Federal Government College, Ugwolawo",
+      "school_address": "Ugwolawo",
+      "school_email": "contact@fgcu.edu.ng",
+      "id": 2
+    },
+    {
+      "school_name": "Cambridge Nigeria",
+      "school_address": "Number 11, Aknaton Estate, Area 1, Abuja",
+      "school_email": "contact@cambridge.com",
+      "id": 3
+    }
+  ]
+}

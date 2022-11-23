@@ -1,0 +1,262 @@
+body {
+    // background-color: #dedede;
+    // background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    // backdrop-filter: blur(8px);
+    // filter: blur(8px);
+    //   -webkit-filter: blur(8px)
+}
+
+nav {
+    font-size: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    color: white;
+    background-color: #135e38;
+    padding: 7px 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.registration {
+    button {
+        padding: 20px;
+        margin-top: 20px;
+        border: 2px solid #135e38;
+        transition: all 0.3s 0s linear;
+        background-color: #135e38;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: 300;
+        width: 100%;
+        cursor: pointer;
+        font-family: monospace;
+
+        &:hover {
+            background-color: white;
+            color: #135e38;
+            border: 2px solid #135e38;
+        }
+    }
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.quiz-container {
+    position: relative;
+    height: 250px;
+    margin-top: 40px;
+
+}
+
+#schedule_check {
+    margin: 50px
+}
+
+.quiz-body {
+    font-family: Verdana, Tahoma, sans-serif sans-serif;
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    display: none;
+
+    button {
+        margin: 40px 0px;
+        text-align: center;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #3983b4;
+        color: white;
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: 500;
+
+        &:hover {
+            background-color: darken(#3983b4, 20%);
+        }
+
+    }
+
+    .question {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .options {
+        font-size: 20px;
+    }
+
+    .options label {
+        display: block;
+        margin: 15px
+    }
+}
+
+.registrations {
+
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: 40px auto;
+    padding: 40px;
+
+    input,
+    select {
+        width: 100%;
+        outline: none;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .school {
+        margin: 50px;
+        border: solid 1px black;
+        padding: 80px;
+    }
+
+    .student {
+        margin: 20px;
+        border: solid 1px black;
+        padding: 80px;
+    }
+
+    #register_school_section,
+    #register_student_section {
+        display: none;
+    }
+
+    #register_school_section,
+    #register_student_section,
+    #login_section {
+        span {
+            color: red
+        }
+    }
+}
+
+.hall-of-fame {
+    margin: 40px auto;
+    border: 1px solid #135e38;
+    // background-color: #4744444d;
+    padding: 30px;
+    width: 30%;
+    background-image: url(../image/torcccc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    // font-weight: 900;
+
+    h2 {
+        // background-color: #135e38;
+        // color: white;
+        padding: 10px;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #135e38;
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+.my-container {
+    align-items: center;
+}
+
+.winner {
+    color: #609b7e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#timer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+
+    h3{
+        color: red;
+    }
+}
+
+#wait_time {
+    display: flex;
+    align-items: flex-end;
+    height: 550px;
+    background-image: url(../image/kome-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 80%;
+    margin: auto;
+
+    span {
+        color: #135e38;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 800;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        // border: solid 2px black;
+        box-shadow: -5px -5px 5px 5px #dedede;
+    }
+
+    .foot {
+        width: 100%;
+        background-color: #135e38;
+        border: none;
+        height: 20px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+    }
+}
+#wait_tim {
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+
+    span {
+        color: #135e38;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 800;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        // border: solid 2px black;
+        box-shadow: -5px -5px 5px 5px #dedede;
+    }
+
+}
